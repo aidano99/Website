@@ -67,7 +67,14 @@
     }
 
     .picture-8 {
-      width: clamp(250px, 80vw, 600px);
+      width: clamp(150px, 25vw, 450px);
+      height: auto;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .picture-9 {
+      width: clamp(150px, 60vw, 550px);
       height: auto;
       justify-self: center;
       align-self: center;
