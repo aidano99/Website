@@ -11,13 +11,13 @@
       background: rgb(255, 255, 255);
 
       display: grid;
-      grid-template-rows: auto 1fr;
+      grid-template-rows: auto auto 1fr;
       justify-content: center;
       align-items: center;
     }
 
     .numbers {
-        grid-row: 1/3;
+        grid-row: 3;
         display: flex;
         gap: clamp(10px, 5vw, 100px);
         font-size: clamp(18px, 2vw, 40px);
@@ -29,12 +29,29 @@
         text-decoration: none;
     }
 
-    .nav-links {
+    .logo-home{
         grid-row: 1;
+        justify-self: center;
+        margin-top: 100px;
+        width: clamp(200px, 30vw, 600px);
+        height: auto;
+    }
+
+    .logo-pages {
+        grid-row: 1;
+        justify-self: center;
+        margin-top: 20px;
+        width: clamp(100px, 10vw, 300px);
+        height: auto;
+    }
+
+    .nav-links {
+        grid-row: 2;
         display: flex;
         gap: clamp(10px, 5vw, 100px);
-        font-size: clamp(18px, 2vw, 40px);
+        font-size: clamp(18px, 1.5vw, 40px);
         align-items: start;
+        margin-top: 40px;
     }
     
     .nav-links a {
@@ -43,6 +60,7 @@
     }
 
     .picture{
+      grid-row: 3;
       width: clamp(250px, 80vw, 700px);
       height: auto;
       justify-self: center;
