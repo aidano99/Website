@@ -81,7 +81,7 @@
     }
 
     .picture-11 {
-      width: 1000px;
+      width: clamp(150px, 60vw, 550px);
       height: auto;
       justify-self: center;
       align-self: center;
